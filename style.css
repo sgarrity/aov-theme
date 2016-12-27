@@ -28,3 +28,25 @@ http://codex.wordpress.org/Child_Themes
 body {
 	border-left: 10px dotted red;
 }
+
+
+/* Legacy image classes from original blog */
+
+img {
+	border: 0;
+	max-width: 100%;
+	height: auto;
+}
+
+img.border { border: 1px solid #999; padding: 2px; background: #fff; }
+
+img.right { float: right; margin: 0.2em 0 1em 1em; }
+img.left  { float: left;  margin: 0.2em 1em 1em 0; }
+img.center { display: block; margin: 1em auto; }
+img.full {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 1em auto;
+	box-sizing: border-box;
+}
