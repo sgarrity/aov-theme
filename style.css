@@ -26,11 +26,133 @@ http://codex.wordpress.org/Child_Themes
 @import url("../casper/style.css");
 
 
+@font-face {
+    font-family: 'Crimson';
+    src: url('crimson-roman-webfont.woff2') format('woff2'),
+         url('crimson-roman-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Crimson';
+    src: url('crimson-bold-webfont.woff2') format('woff2'),
+         url('crimson-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Crimson';
+    src: url('crimson-bolditalic-webfont.woff2') format('woff2'),
+         url('crimson-bolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Crimson';
+    src: url('crimson-italic-webfont.woff2') format('woff2'),
+         url('crimson-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
 /* Override Casper styles */
+
+body {
+	font-family: Crimson,serif;
+	background: #fff;
+	color: #333;
+}
 
 .site-head {
 	height: auto;
+	background: transparent;
+	color: inherit;
+	border: 0;
 }
+
+.blog-logo {
+	color: #777;
+}
+
+.blog-title {
+	text-shadow: none;
+}
+
+.main-navigation {
+	display: none;
+}
+
+.hentry {
+	hyphens: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: inherit;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 2.5rem;
+	line-height: 1.2em;
+	letter-spacing: -0.02em;
+}
+h2 {
+	font-size: 2.3rem;
+	line-height: 1.2em;
+}
+h3 {
+	font-size:2rem
+}
+h4 {
+	font-size:1.8rem
+}
+h5 {
+	font-size:1.7rem
+}
+h6 {
+	font-size:1.5rem
+}
+
+a { color: #069; }
+a:link { color: #069; }
+a:visited { color: #666; }
+a:hover { color: #000; }
+a:active { color: #000; }
+
+p, ul, ol, dl {
+	margin-top: 0;
+}
+
+blockquote {
+	color: #777;
+}
+
+blockquote p {
+	margin-top: 0;
+}
+
+.post-title {
+	color: #930;
+}
+
+.post-title a,
+.post-title a:link,
+.post-title a:visited,
+.post-title a:hover,
+.post-title a:active {
+	color: #930;
+	text-decoration: none;
+}
+
 
 /* Legacy image classes from original blog */
 
