@@ -26,41 +26,6 @@ http://codex.wordpress.org/Child_Themes
 @import url("../casper/style.css");
 
 
-@font-face {
-    font-family: 'Crimson';
-    src: url('crimson-roman-webfont.woff2') format('woff2'),
-         url('crimson-roman-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'Crimson';
-    src: url('crimson-bold-webfont.woff2') format('woff2'),
-         url('crimson-bold-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'Crimson';
-    src: url('crimson-bolditalic-webfont.woff2') format('woff2'),
-         url('crimson-bolditalic-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-
-}
-
-@font-face {
-    font-family: 'Crimson';
-    src: url('crimson-italic-webfont.woff2') format('woff2'),
-         url('crimson-italic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-}
-
 /* Override Casper styles */
 
 html {
@@ -68,9 +33,10 @@ html {
 }
 
 body {
-	font-family: Crimson,serif;
+	font-family: Georgia, serif;
 	background: #fff;
 	color: #333;
+	font-size: 2.2rem;
 }
 
 .site-head {
@@ -102,7 +68,6 @@ body {
 	font-weight: normal;
 	font-variant: small-caps;
 	font-size: 4rem;
-	letter-spacing: auto;
 }
 
 .blog-title span.title-2 {
@@ -124,6 +89,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: inherit;
+	letter-spacing: normal;
 }
 
 h1, h2, h3 {
@@ -131,9 +97,8 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 2.5rem;
+	font-size: 3rem;
 	line-height: 1.2em;
-	letter-spacing: -0.02em;
 }
 h2 {
 	font-size: 2.3rem;
@@ -197,6 +162,7 @@ blockquote p {
 
 .post-meta {
 	font-size: 1.3rem;
+	line-height: 1.1;
 }
 
 /* Legacy image classes from original blog */
