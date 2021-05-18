@@ -24,7 +24,7 @@
 				?>
 			</span>
 		<?php endif; ?>
-        <?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it. 
+        <?php /* if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it. 
         	$image_id = get_post_thumbnail_id();
         	$thumb_url = wp_get_attachment_image_src($image_id,'thumbnail', true);
 			$medium_url = wp_get_attachment_image_src($image_id,'medium', true);
@@ -35,7 +35,7 @@
         		<img data-src='<480:<?php echo $thumb_url[0]; ?>, <768:<?php echo $medium_url[0]; ?>, >768:<?php echo $large_url[0]; ?>' />
 			</div>
 			<noscript><?php the_post_thumbnail('thumbnail'); ?></noscript>
-	    <?php } ?> 
+	    <?php } */ ?> 
     </header>
 	<section class="post-content">
 
